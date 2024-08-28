@@ -1,3 +1,20 @@
+// Program stcky navbar
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById('navbar');
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+
+// Program Slide gambar
 let indexSlide = 1;
 showslide(1);
 
@@ -30,6 +47,8 @@ setInterval(() => nextSlide(1), 3000);
 
 
 
+// Program add massageUS
+
 let username = document.querySelector('#input-name')
 
 let date = document.querySelector('#input-Date')
@@ -45,17 +64,13 @@ submitBtn.addEventListener('click', submitFeedback);
 
 feedbackArr = [];
 
-function submitFeedback(e) {
-
-    
+function submitFeedback(e) {  
     
     const namevalue = username.value;
     const datevalue = date.value;
-    
 
-    var dateString = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
+    var dateString = new Date().toLocaleString("en-US", {timeZone: "Asia/Jakarta"});
     var formattedString = dateString.replace(", ", " - ");
-
     const pesanvalue = pesan.value;
 
     for (i = 0; i < gender.length; i++) {
@@ -92,9 +107,6 @@ function submitFeedback(e) {
 
 }
 
-
-
-
 function addFeedback(item){
     const letter = (item.names).charAt(0);
     const div = document.createElement('div');
@@ -118,6 +130,7 @@ function addFeedback(item){
                             Current Time: ${item.clock}
                         </small>
                         <p class="comment">
+                            ${item.pesans}
                             
                         </p>
                     </div>

@@ -9,6 +9,12 @@ nav {
     align-items: center;
     padding: 8px;
     margin-bottom: 45px;
+    width: auto;
+    background-color: #ffffff;
+}
+.sticky {
+    position: sticky;
+    top: 0;   
 }
 .nav_section {
     display: flex;
@@ -156,4 +162,9 @@ nav {
 
 .comment_info .comment{
     margin: 5px 0;
+}
+
+/*footer*/
+.footer {
+    text-align: right;
 }
