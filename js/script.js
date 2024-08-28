@@ -118,7 +118,7 @@ function addFeedback(item){
                             Current Time: ${item.clock}
                         </small>
                         <p class="comment">
-                            
+                            ${item.pesans}
                         </p>
                     </div>
     `;
