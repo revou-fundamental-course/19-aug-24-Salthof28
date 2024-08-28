@@ -28,6 +28,7 @@ nav {
     color: black;
     text-decoration: none;
     background-color: #d1e000;
+    text-align: center;
 }
 .logo_icon { 
     background-image: url(../assets/Revou-Logo.png);
@@ -216,4 +217,33 @@ nav {
 /*footer*/
 .footer {
     text-align: right;
+}
+/*responsive Design*/
+@media only screen and (max-width: 425px) {
+    .MassageUS_Container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column; 
+    }
+    .center_display{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #dadada;
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_section{
+        flex-direction: column;
+    }
+
 }
