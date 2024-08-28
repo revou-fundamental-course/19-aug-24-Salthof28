@@ -11,9 +11,6 @@ function myFunction() {
   }
 }
 
-
-
-
 // Program Slide gambar
 let indexSlide = 1;
 showslide(1);
@@ -23,8 +20,6 @@ function nextSlide(n) {
     showslide(indexSlide += n);
     
 }
-
-
 function showslide(n) {
     let listImage = document.getElementsByClassName('MainArticle_Banner_Content');
     console.log(listImage);
@@ -44,8 +39,6 @@ function showslide(n) {
 }
 
 setInterval(() => nextSlide(1), 3000);
-
-
 
 // Program add massageUS
 
@@ -131,14 +124,10 @@ function addFeedback(item){
                         </small>
                         <p class="comment">
                             ${item.pesans}
-<<<<<<< HEAD
-                            
-=======
->>>>>>> 693590d936e8fc91480adbdf8a5c7c9eaf5c6af4
                         </p>
                     </div>
     `;
-    // insert feedback into the list
+    // memasukan feedback ke list "div class = "comment_container""
     commentsCont.insertAdjacentElement('beforeend', div);
 
 }

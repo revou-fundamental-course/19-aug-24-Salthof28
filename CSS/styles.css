@@ -3,14 +3,15 @@ html {
 }
 /*Nav*/
 nav {
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
     margin-bottom: 45px;
     width: auto;
-    background-color: #ffffff;
+    background-color: #414141;
+    border-radius: 10px;
+    
 }
 .sticky {
     position: sticky;
@@ -20,15 +21,15 @@ nav {
     display: flex;
 }
 .nav_item {
-    border: 1px solid;
     padding: 5px;
+    box-shadow: 1px 1px 1px #555c31;
     border-radius: 8px;
     margin: 1px;
     color: black;
     text-decoration: none;
+    background-color: #d1e000;
 }
 .logo_icon { 
-    border: 1px solid;
     background-image: url(../assets/Revou-Logo.png);
     height: 40px;
     width: 40px;
@@ -74,9 +75,14 @@ nav {
 .profile_container {
     display: flex;
     justify-content: space-around;
+    background-color: #dadada;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
 }
 .profile_item {
     text-align: -webkit-center;
+    
 }
 .profile_img {
     background-image: url(../assets/user.jpg);
@@ -87,23 +93,50 @@ nav {
     background-repeat: no-repeat;
     border-radius: 50%;
 }
+.html_img {
+    background-image: url(../assets/html.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.css_img {
+    background-image: url(../assets/CSS.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.java_img {
+    background-image: url(../assets/Javascript.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
 
 /*Massage US*/
 .MassageUS_Container {
-    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .form_MassageUS {
-    border: solid 1px;
+    
     width: 600px;
-    height: 280px;
+    height: 330px;
     padding-left: 2%;
     margin-right: 50px;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    background-color: #c0cc1c;
 }
 .Form_row {
     display: flex;
@@ -121,13 +154,26 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
+.input_standar {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #bec0c4;
+    box-shadow: none;
+    border-radius: 8px;
+    margin: 8px 0;
+    width: 60%;
+    text-align: center;
+    font-family: arial, sans-serif;
+}
 .Button_style {
     height: 40px;
     width: 75%;
+    border-radius: 10px;
+    background-color: #cc334a;
+    border: none;
 }
 .comments_container{
     width: 1024px;
-
     margin-top: 2rem;
 }
 .comment_card{
@@ -135,13 +181,16 @@ nav {
     display: grid;
     grid-template-columns: 3% auto;
     margin: 0.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #c9c9c9;
 }
 .center_display{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    border-radius: 10px;
+    width: 800px;
+    background-color: #dadada;
 }
 .comment_info{
     display: flex;
