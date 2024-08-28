@@ -131,7 +131,10 @@ function addFeedback(item){
                         </small>
                         <p class="comment">
                             ${item.pesans}
+<<<<<<< HEAD
                             
+=======
+>>>>>>> 693590d936e8fc91480adbdf8a5c7c9eaf5c6af4
                         </p>
                     </div>
     `;
